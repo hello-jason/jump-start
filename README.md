@@ -1,60 +1,6 @@
-[![Dependency Status](https://gemnasium.com/hello-jason/middleman-bss.svg)](https://gemnasium.com/hello-jason/middleman-bss)
-
-# Middleman (Bootstrap+Slim+SCSS)
-
-A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Slim templates, and SCSS.
-
-## Install this template
-
-* Clone **middleman-bss** into `~/.middleman`. You will need to create this directory if it doesn't exist.
-
-```
-git clone https://github.com/hello-jason/middleman-bss.git ~/.middleman/middleman-bss
-```
-
-## Using this template
-
-* Create a new Middleman project based on this template.
-
-```
-middleman init project-name --template=middleman-bss
-```
-
-* This is your project, so you'll want to remove the included `.git` directory after initializing a new project.
-```
-rm -rf .git
-```
-
----
-
-*That's it! Initialize your own git repo now, if you like. Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
-
----
-
 # Middleman Website
 
 Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
-
-**Included packages:**
-
-* [Middleman](http://middlemanapp.com/)
-* [Slim](http://slim-lang.com/)
-* [Sass](http://sass-lang.com/)
-* [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
-* [Font Awesome](http://fontawesome.io)
-* [Tilt](https://github.com/rtomayko/tilt)
-* [jQuery](http://jquery.com/)
-* [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
-
-**Included features:**
-
-* Autoprefixer
-* CSS reset
-* HTML5 layout
-* Image compression
-* Asset minification
-* Favicon generation
-* Live Reload
 
 ## Setup in development
 
@@ -105,8 +51,18 @@ bundle exec middleman
 bundle exec middleman build
 ```
 
+## Building
+
+```bash
+bundle exec middleman build
+```
+
 ## Deploying
+
+This is not setup yet.
+
 Middleman-deploy can deploy a site via rsync, ftp, sftp, or git. Configure the deployment section of `config.rb`, then run the deploy command. Note, this will build for you before deploying.
+
 ```bash
 bundle exec middleman deploy
 ```
