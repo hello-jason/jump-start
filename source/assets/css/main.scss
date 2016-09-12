@@ -4,13 +4,9 @@
 @import "wpetheme/wpe-bootstrap-theme";
 
 /* ==========================================================================
- * Imports / Includes
+ * Bootstrap v4 core
  * ========================================================================== */
-
-@import "font-awesome";                     // Font Awesome icon library
-@import "_mixins";                          // Custom mixins
-@import "_globals";                         // Global elements
-@import "_bootstrap-includes";              // Bootstrap core
+@import "_bootstrap-includes";
 
 /* ==========================================================================
  * Application Specific
