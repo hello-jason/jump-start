@@ -1,0 +1,31 @@
+// Buttons
+//
+
+$btn-box-shadow:                 none;
+$btn-active-box-shadow:          none;
+
+// Use mixin to declare outlined button
+.btn-outline-gable {
+  @include button-outline-variant($color-gable);
+}
+
+// Allows for customizing button radius independently from global border radius
+
+$btn-border-radius:              4px;
+$btn-border-radius-lg:           6px;
+$btn-border-radius-sm:           2px;
+
+// Remove outset default
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button, .btn {
+  border-style: solid !important;
+}
+
+// Add fade effect to button hovers
+.btn {
+  @include wpe-transition(background-color);
+  @include wpe-transition(color);
+}
+
+$btn-secondary-color:            $color-gable;
+$btn-secondary-bg:               transparent;
+$btn-secondary-border:           $color-gable;

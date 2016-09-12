@@ -1,0 +1,33 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+/**
+ * Helper file to import needed font classes
+ */
+
+// Declare DIN Next LT Ultra Light
+@font-face{
+  font-family: 'DIN Next LT UltraLight';
+  src: url('../fonts/DINNextLTW01-UltraLight_706122.eot');
+  src: url('../fonts/DINNextLTW01-UltraLight_706122.eot?iefix') format('eot'),
+       url('../fonts/DINNextLTW01-UltraLight_706122.woff') format('woff'),
+       url('../fonts/DINNextLTW01-UltraLight_706122.ttf') format('truetype'),
+       url('../fonts/DINNextLTW01-UltraLight_706122.svg#webfont') format('svg');
+  font-weight: normal;
+}
+
+// Declare Open Sans
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,600,400");
+
+// Assign fonts
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$headings-font-family:   "DIN Next LT UltraLight", "Open Sans", sans-serif;
+
+// Headings
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
