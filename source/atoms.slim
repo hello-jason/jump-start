@@ -2,10 +2,86 @@
 title: Atoms
 ---
 
-section.wpe-buttons
-  h2 Buttons
+section.wpe-headings
+  h2.section-title Headings
 
-  button.btn-outline-primary type="button" Test
+  .h1 Heading 1
+  .h2 Heading 2
+  .h3 Heading 3
+  .h4 Heading 4
+  .h5 Heading 5
+  .h6 Heading 6
+
+section.wpe-text
+  h2.section-title Body text
+
+  p Iced tea zydeco praline cher bread pudding downtown interstate merci beaucoup. Mardi Gras cher okra gumbo lagniappe Mardi Gras football po-boy cher tasso red beans & rice. Lafayette remoulade bourre iced tea fais do do fishing. Cajun zydeco Thibideaux pecan pie Mardi Gras bonjour viens ci beer. Downtown praline hunting food fried catfish <a href="#">downtown trail ride</a>. Couillon food farmer's market smoked sausage levee praline cayenne Mardi Gras Boudreaux alligator. Football iced tea make a roux turducken boudin Mardi Gras Mardi Gras.
+
+section.wpe-buttons
+  h2.section-title Buttons
+
+  .buttons-row
+    strong .btn-outline-primary <br>
+    button.btn.btn-sm.btn-outline-primary type="button" Small button
+    button.btn.btn-outline-primary type="button" Default button
+    button.btn.btn-lg.btn-outline-primary type="button" Large button
+
+  .buttons-row
+    strong .btn-outline-secondary <br>
+    button.btn.btn-sm.btn-outline-secondary type="button" Small button
+    button.btn.btn-outline-secondary type="button" Default button
+    button.btn.btn-lg.btn-outline-secondary type="button" Large button
 
 section.wpe-forms
-  h2 Form Elements
+  h2.section-title Form Elements
+
+  form.col-md-6
+    .form-group
+      label for="exampleInputEmail1"  Email address
+      input#exampleInputEmail1.form-control aria-describedby="emailHelp" placeholder=("Enter email") type="email" /
+      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+    .form-group
+      label for="exampleInputPassword1"  Password
+      input#exampleInputPassword1.form-control placeholder="Password" type="password" /
+    .form-group
+      label for="exampleSelect1"  Example select
+      select#exampleSelect1.form-control
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+    .form-group
+      label for="exampleSelect2"  Example multiple select
+      select#exampleSelect2.form-control multiple=""
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+    .form-group
+      label for="exampleTextarea"  Example textarea
+      textarea#exampleTextarea.form-control rows="3"
+    .form-group
+      label for="exampleInputFile"  File input
+      input#exampleInputFile.form-control-file aria-describedby="fileHelp" type="file" /
+      small#fileHelp.form-text.text-muted This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+    fieldset.form-group
+      legend Radio buttons
+      .form-check
+        label.form-check-label
+          input#optionsRadios1.form-check-input checked="" name="optionsRadios" type="radio" value="option1" /
+          | Option one is this and that&mdash;be sure to include why it's great
+      .form-check
+        label.form-check-label
+          input#optionsRadios2.form-check-input name="optionsRadios" type="radio" value="option2" /
+          | Option two can be something else and selecting it will deselect option one
+      .form-check.disabled
+        label.form-check-label
+          input#optionsRadios3.form-check-input disabled="" name="optionsRadios" type="radio" value="option3" /
+          | Option three is disabled
+    .form-check
+      label.form-check-label
+        input.form-check-input type="checkbox" /
+        | Check me out
+    button.btn.btn-outline-primary.btn-lg type="submit"  Submit
