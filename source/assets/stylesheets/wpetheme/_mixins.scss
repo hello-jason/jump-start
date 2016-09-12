@@ -59,59 +59,51 @@
 // Create additional button color schemes using the supplied Bootstrap mixin
 // Usage: @include button-variant-outline($text-color-normal, $text-color-hover, $background-color-hover, $border-color-color)
 
-@mixin button-variant-outline($text-color-up, $text-color-hover, $background-color-hover, $border-color) {
-  color: $text-color-up;
+@mixin button-outline-variant($color) {
+  color: $color;
+  background-image: none;
   background-color: transparent;
-  border-color: $border-color;
-  @include wpe-transition(background-color);
+  border-color: $color;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $color;
+        border-color: $color;
+  }
 
   &:focus,
   &.focus {
-    color: $text-color-hover;
-    background-color: $background-color-hover;
-        border-color: $border-color;
+    color: #fff;
+    background-color: $color;
+        border-color: $color;
   }
-  &:hover {
-    color: $text-color-hover;
-    background-color: $background-color-hover;
-        border-color: $border-color;
-  }
+
   &:active,
   &.active,
   .open > &.dropdown-toggle {
-    color: $text-color-hover;
-    background-color: $background-color-hover;
-        border-color: $border-color;
+    color: #fff;
+    background-color: $color;
+        border-color: $color;
 
     &:hover,
     &:focus,
     &.focus {
-      color: $text-color-hover;
-      background-color: $background-color-hover;
-          border-color: $border-color;
-    }
-  }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-      background-color: $background-color-hover;
-          border-color: $border-color;
+      color: #fff;
+      background-color: darken($color, 17%);
+          border-color: darken($color, 25%);
     }
   }
 
-  .badge {
-    color: $background-color-hover;
-    background-color: $text-color-up;
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      border-color: lighten($color, 20%);
+    }
+    &:hover,
+    &:focus {
+      border-color: lighten($color, 20%);
+    }
   }
 }

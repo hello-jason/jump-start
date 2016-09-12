@@ -16,15 +16,15 @@ set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
 
 # Set asset directories
-set :css_dir,              "assets/css"
-set :js_dir,               "assets/js"
-set :images_dir,           "assets/img"
+set :css_dir,              "assets/stylesheets"
+set :js_dir,               "assets/javascript"
+set :images_dir,           "assets/images"
 set :fonts_dir,            "assets/fonts"
 
 # Sitemap URLs (use trailing slashes)
-set :url_hub_brand,            "/brand/"
-set :url_brand_colors,         "#{url_hub_brand}colors/"
-# Place additional URLs here...
+# Brand
+set :url_brand,            "/brand/"
+set :url_atoms,            "/atoms/"
 
 
 # Slim template engine

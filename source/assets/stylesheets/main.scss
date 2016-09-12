@@ -4,12 +4,8 @@
 @import "wpetheme/wpe-bootstrap-theme";
 
 /* ==========================================================================
- * Bootstrap v4 core
- * ========================================================================== */
-@import "_bootstrap-includes";
-
-/* ==========================================================================
  * Application Specific
  * Place application-specific styles into /app directory
  * ========================================================================== */
 @import "app/_color-cards";
+@import "app/_layout";

@@ -3,6 +3,7 @@
     @extend .col-md-2;
   }
   .color-swatch {
+    margin-top: $card-spacer-y;
     width: 100%;
     height: 100px;
   }
