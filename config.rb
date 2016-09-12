@@ -10,7 +10,7 @@ require "./source/environment_variables.rb"
 # ========================================================================
 # Site settings
 # ========================================================================
-set :site_title,            "Middleman Site"
+set :site_title,            "WP Engine Jump Start"
 set :site_description,      "This is an example meta description."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
@@ -22,7 +22,8 @@ set :images_dir,           "assets/img"
 set :fonts_dir,            "assets/fonts"
 
 # Sitemap URLs (use trailing slashes)
-set :url_sample,            "/sample/"
+set :url_hub_brand,            "/brand/"
+set :url_hub_brand,            "#{url_hub_brand}colors/"
 # Place additional URLs here...
 
 

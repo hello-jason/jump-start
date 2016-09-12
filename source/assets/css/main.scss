@@ -4,11 +4,18 @@
  * Imports / Includes
  * ========================================================================== */
 
-@import "font-awesome";           // Font Awesome icon library
-@import "_variables";             // Bootstrap variable overrides
-@import "_mixins";                // Custom mixins
-@import "_globals";               // Global elements
-@import "_bootstrap-includes";    // Bootstrap core
+@import "font-awesome";                     // Font Awesome icon library
+@import "_bootstrap-variable-overrides";    // Bootstrap variable overrides
+@import "_mixins";                          // Custom mixins
+@import "_globals";                         // Global elements
+@import "_bootstrap-includes";              // Bootstrap core
+
+
+/* ==========================================================================
+ * Application Specific
+ * Place application-specific styles into /app directory
+ * ========================================================================== */
+@import "app/_color-cards";
 
 
 /* ==========================================================================

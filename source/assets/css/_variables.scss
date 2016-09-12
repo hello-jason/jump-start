@@ -1,1 +1,47 @@
-$brand-primary:             purple;
+//=== Bootstrap variable overrides
+// Documentation: http://getbootstrap.com/customize/
+
+// Colors
+// // Custom colors
+$wpe-blue-dark:          #111D2F;
+$wpe-blue-light:         #40BAC8;
+$wpe-blue-tertiary:     #162A33;
+$wpe-orange:            #EB6126;
+
+// // Bootstrap colors
+$brand-primary:         $wpe-orange;
+$brand-secondary:       $wpe-blue-dark;
+$brand-tertiary:        #162A33;
+
+// Scaffolding
+$body-bg: #fff;
+$text-color: #666;
+
+// Typography
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 16rem;
+$line-height-base: 1.75;
+$font-size-small: ceil(($font-size-base * 0.8));
+
+// Headings
+$headings-font-family: "DIN Next LT UltraLight", "Open Sans", sans-serif;
+$headings-color: $brand-secondary;
+
+// Components
+$border-radius-base: 3px;
+$border-radius-small: 3px;
+$border-radius-large: 5px;
+
+// Tables
+$table-bg-accent: #fff;
+
+// Buttons
+$btn-default-color: $brand-primary;
+$btn-default-bg: transparent;
+$btn-default-border: $brand-primary;
+
+// Grid System
+$grid-gutter-width: 30px;
+$section-padding: ($grid-gutter-width * 1.5);
+
+//=== End Bootstrap variable overrides

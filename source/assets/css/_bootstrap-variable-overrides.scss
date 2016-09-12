@@ -1,0 +1,67 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Colors
+//
+// WP Engine primary colors
+$color-pelorous: #40BAC8;
+$color-gable: #162A33;
+
+// WP Engine secondary colors
+$color-flamingo: #EB6126;
+$color-saffron: #F6C443;
+$color-deyork: #72C5A1;
+$color-chateau: #A0A3A5;
+$color-quill: #D8DAD6;
+
+// WP Engine tertiary colors
+$color-copperfield: #DE8073;
+$color-venus: #9E859E;
+$color-montecarlo: #8CD6D3;
+$color-steel: #4A82BA;
+$color-celery: #ABC261;
+$color-rollingstone: #738085;
+
+// Grayscale
+$color-grayscale-1: #F6F9FB;
+$color-grayscale-2: #EDF2F7;
+$color-grayscale-3: #E2EBF2;
+$color-grayscale-4: #DAE5EF;
+$color-grayscale-5: #CEDDE9;
+
+// Bluescale
+$color-bluescale-1: #EBEEF1;
+$color-bluescale-2: #E2E8ED;
+$color-bluescale-3: #D8E1E8;
+$color-bluescale-4: #D0DBE5;
+$color-bluescale-5: #C5D4E0;
+
+// Misc colors
+$body-text: #666666;
+$error: #C72525;
+
+// Bootstrap grayscale
+
+$gray-dark:                 $$color-flamingo !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+// Brand assignments
+
+$brand-primary:             #0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-flex: true;
+
