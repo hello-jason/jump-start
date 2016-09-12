@@ -5,7 +5,8 @@ source "https://rubygems.org"
 gem "middleman", "~> 3.4"
 
 # Assets
-gem "bootstrap-sass", "~> 3.3.6", require: false
+# gem "bootstrap-sass", "~> 3.3.6", require: false
+gem "bootstrap", "4.0.0.alpha4", require: false
 gem "font-awesome-middleman", "~> 4.5.0"
 
 # Templating
