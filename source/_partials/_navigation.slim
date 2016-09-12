@@ -1,15 +1,9 @@
-nav.navbar.navbar-default
-  .container-fluid
-    .navbar-header
-      button.navbar-toggle data-target="#primary-navigation" data-toggle="collapse" type="button"
-        span.sr-only
-          | Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand href="#{site_url}" title="#{site_title}" #{site_title}
-
-    .collapse.navbar-collapse#primary-navigation
-      ul.nav.navbar-nav
-        =nav_li "Home", ""
-        =nav_li "Sample", "#{url_sample}", "", "fa-chevron-right"
+nav.navbar.navbar-light.bg-faded
+  button.navbar-toggler.hidden-sm-up data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation" &#9776;
+  div.collapse.navbar-toggleable-xs
+    a.navbar-brand #{site_title}
+    ul.nav.navbar-nav
+      li.nav-item
+        a.nav-link href="/" Home
+      li.nav-item
+        a.nav-link href="#{url_hub_brand}" Brand
